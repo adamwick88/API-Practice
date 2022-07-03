@@ -4,6 +4,7 @@ const app = express()
 const cors=require('cors')
 const PORT = 8000
 
+app.use(cors())
 
 
 const chiaotzu
@@ -68,7 +69,7 @@ app.get('/api/:dragonBallName', (request,response)=>{
    if(chiaotzu[dragonBallName]){
    response.json(chiaotzu[dragonBallName]) 
    }else{
-    response.json(character['goku'])
+    response.json(character['buu'])
    }
 })
 
