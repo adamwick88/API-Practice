@@ -65,8 +65,8 @@ app.get('/',(request,response)=>{
 
 app.get('/api/:dragonBallName', (request,response)=>{
    const dragonBallName= request.params.dragonBallName.toLowerCase()
-   if(character[dragonBallName]){
-   response.json(character[dragonBallName]) 
+   if(chiaotzu[dragonBallName]){
+   response.json(chiaotzu[dragonBallName]) 
    }else{
     response.json(character['goku'])
    }
